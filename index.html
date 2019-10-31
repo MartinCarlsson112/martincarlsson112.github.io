@@ -1,4 +1,49 @@
-hello 
-#grad {
-  background-image: linear-gradient(red, yellow);
-}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      height: 1080px;
+      background: linear-gradient(#09749738 0%, #ff99cc2c 100%);
+      background-repeat: no-repeat;
+      font-family: verdana;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>
+    <p id='blogTitle' style="text-align:center"></p>
+  </h1>
+
+  <p id=''></p>
+
+
+  <script language="JavaScript">
+
+    var blogtitle = "Gamedev With Martin";
+
+    window.onload = function () {
+      var textNode = document.createTextNode(blogtitle);
+      p = document.getElementById('blogTitle');
+      p.appendChild(textNode);
+
+      var linktag = "<A HREF='http://www.java2s.com'>Web Site Link!</A>";
+
+
+      var sometext = "This text can be affected by other statements.";
+      var begineffect = "<U>";
+      var endeffect = "</U>";
+      var newsection = "<BR>";
+    }
+
+  </script>
+
+
+
+</body>
+
+
+</html>
