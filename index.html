@@ -15,7 +15,7 @@
 <body>
   <h1>
     <p id='blogTitle' style="text-align:center"></p>
-    <p id='projectDisplay'style="text-align:left;"></p>
+    <img src='goblindoctors.png' alt="goblin doctors">
   </h1>
 
   <p id=''></p>
@@ -24,17 +24,10 @@
   <script language="JavaScript">
 
     var blogtitle = "Gamedev With Martin";
-    var goblinDoctorsName = "Goblin Doctors";
     window.onload = function () {
       var textNode = document.createTextNode(blogtitle);
       p = document.getElementById('blogTitle');
       p.appendChild(textNode);
-
-      var imageNode = document.createElement(goblinDoctorsName);
-      imageNode.src = "https://martingame.dev/goblindoctors.png";
-
-      p = document.getElementById('projectDisplay');
-      p.appendChild(imageNode);
 
 
       var linktag = "<A HREF='http://www.java2s.com'>Web Site Link!</A>";
