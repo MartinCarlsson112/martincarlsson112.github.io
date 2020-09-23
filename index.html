@@ -15,7 +15,31 @@
 <body>
   <h1>
     <p id='blogTitle' style="text-align:center"></p>
-    <img src='goblindoctors.png' alt="goblin doctors">
+
+  <header>
+    <p>My Portfolio</p>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main></main>
+  <footer></footer>
+
+
+
   </h1>
 
   <p id=''></p>
@@ -29,18 +53,47 @@
       p = document.getElementById('blogTitle');
       p.appendChild(textNode);
 
-
       var linktag = "<A HREF='http://www.java2s.com'>Web Site Link!</A>";
-
 
       var sometext = "This text can be affected by other statements.";
       var begineffect = "<U>";
       var endeffect = "</U>";
       var newsection = "<BR>";
 
+      var lastClicked;
+
+      var grid = clickableGrid(10, 10, function (el, row, col, i) {
+        console.log("You clicked on element:", el);
+        console.log("You clicked on row:", row);
+        console.log("You clicked on col:", col);
+        console.log("You clicked on item #:", i);
+
+        el.className = 'clicked';
+        if (lastClicked) lastClicked.className = '';
+        lastClicked = el;
+      });
+
+      document.body.appendChild(grid);
 
     }
 
+
+    function clickableGrid(rows, cols, callback) {
+      var i = 0;
+      var grid = document.createElement('table');
+      grid.className = 'grid';
+      for (var r = 0; r < rows; ++r) {
+        var tr = grid.appendChild(document.createElement('tr'));
+        for (var c = 0; c < cols; ++c) {
+          var cell = tr.appendChild(document.createElement('td'));
+          cell.innerHTML = ++i;
+          cell.addEventListener('click', (function (el, r, c, i) {
+            return function () { callback(el, r, c, i); }
+          })(cell, r, c, i), false);
+        }
+      }
+      return grid;
+    }
   </script>
 
 
