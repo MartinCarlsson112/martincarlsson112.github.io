@@ -15,13 +15,6 @@
 
 .grid { margin:1em auto; border-collapse:collapse }
 
-.cellimage
-{
-  height: auto;
-  max-width: 20vh;
-  width: 100%;
-}
-
 .grid td {
     cursor:pointer;
     width:100%;
@@ -108,8 +101,9 @@
 
         var tr = grid.appendChild(document.createElement('tr'));
         for (var c = 0; c < cols; ++c) {
-          var img = document.createElement('cellimage');
+          var img = new Image();
           img.src = '/goblindoctors.png';
+
           var cell = tr.appendChild(document.createElement('td'));
           cell.appendChild(img);
           //cell.innerHTML = ++i;
