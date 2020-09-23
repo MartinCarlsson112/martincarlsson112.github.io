@@ -3,9 +3,9 @@ body
     background: linear-gradient(#09749738 0%, #ff99cc2c 100%);
 }
 
-grid { margin:1em auto; border-collapse:collapse }
+.grid { margin:1em auto; border-collapse:collapse }
 
-grid td {
+.grid td {
     cursor:pointer;
     width:30px; height:30px;
     border:1px solid #ccc;
@@ -13,7 +13,7 @@ grid td {
     font-family:sans-serif; font-size:13px
 }
 
-grid td.clicked {
+.grid td.clicked {
     background-color:yellow;
     font-weight:bold; color:red;
 }
