@@ -81,9 +81,12 @@
       for (var r = 0; r < rows; ++r) {
         var tr = grid.appendChild(document.createElement('tr'));
         for (var c = 0; c < cols; ++c) {
-          var cell = tr.appendChild(document.createElement('td'));
+                    const image = document.createElement('td');
+                    image.src = "/goblindoctors.png";
+          var cell = tr.appendChild(image);
+
           cell.innerHTML = ++i;
-          cell.src = "/goblindoctors.png";
+
           cell.addEventListener('click', (function (el, r, c, i) {
             return function () { callback(el, r, c, i); }
           })(cell, r, c, i), false);
