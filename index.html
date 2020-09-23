@@ -10,16 +10,16 @@
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      font-size: 20px;
+      font-size: 14px;
     }
 
 .grid { margin:1em auto; border-collapse:collapse }
 
 .grid td {
     cursor:pointer;
-    width: 33%;
+    width: 100%;
     height: auto;
-    max-width: 20vh;
+    max-width: 20vw;
     border:1px solid #ccc;
     text-align:center;
     font-family:sans-serif; 
@@ -103,8 +103,8 @@
         for (var c = 0; c < cols; ++c) {
           var img = new Image();
           img.src = '/goblindoctors.png';
-          img.style.width = '33%'
-          img.style.maxWidth = '20vh'
+          img.style.width = '100%'
+          img.style.maxWidth = '20vw'
           img.style.height = 'auto'
           var cell = tr.appendChild(document.createElement('td'));
           cell.appendChild(img);
