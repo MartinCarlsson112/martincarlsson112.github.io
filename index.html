@@ -19,13 +19,11 @@
     width:30px; height:30px;
     border:1px solid #ccc;
     text-align:center;
-    background-image: unset;
     font-family:sans-serif; font-size:13px
 }
 
 .grid td.clicked {
     background-color:yellow;
-    background-image: unset;
     font-weight:bold; color:red;
 }
 
@@ -99,7 +97,7 @@
         var tr = grid.appendChild(document.createElement('tr'));
         for (var c = 0; c < cols; ++c) {
                     const image = document.createElement('td');
-                    image.src = "/goblindoctors.png";
+                    image.src = '/goblindoctors.png';
           var cell = tr.appendChild(image);
 
           cell.innerHTML = ++i;
