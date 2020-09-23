@@ -96,10 +96,10 @@
       for (var r = 0; r < rows; ++r) {
         var tr = grid.appendChild(document.createElement('tr'));
         for (var c = 0; c < cols; ++c) {
-                    const image = document.createElement('td');
-                    image.src = '/goblindoctors.png';
-          var cell = tr.appendChild(image);
-
+          var img = new Image();
+          img.src = '/goblindoctors.png';
+          var cell = tr.appendChild(document.createElement('td'));
+          cell.appendChild(img);
           cell.innerHTML = ++i;
 
           cell.addEventListener('click', (function (el, r, c, i) {
