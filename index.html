@@ -100,7 +100,7 @@
           img.src = '/goblindoctors.png';
           var cell = tr.appendChild(document.createElement('td'));
           cell.appendChild(img);
-          cell.innerHTML = ++i;
+          //cell.innerHTML = ++i;
 
           cell.addEventListener('click', (function (el, r, c, i) {
             return function () { callback(el, r, c, i); }
