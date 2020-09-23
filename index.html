@@ -16,10 +16,13 @@
 
 .grid td {
     cursor:pointer;
-    width:30px; height:30px;
+    width:auto;
+    height: 100%;
+    max-height: 20vh;
     border:1px solid #ccc;
     text-align:center;
-    font-family:sans-serif; font-size:13px
+    font-family:sans-serif; 
+    font-size:13px;
 }
 
 .grid td.clicked {
@@ -98,8 +101,6 @@
         for (var c = 0; c < cols; ++c) {
           var img = new Image();
           img.src = '/goblindoctors.png';
-          img.width = 400;
-          img.height = 200;
           var cell = tr.appendChild(document.createElement('td'));
           cell.appendChild(img);
           //cell.innerHTML = ++i;
