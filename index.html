@@ -53,6 +53,8 @@
     var blogtitle = "Gamedev With Martin";
     window.onload = function () {
       var textNode = document.createTextNode(blogtitle);
+      p = document.getElementById('blogTitle');
+      p.appendChild(textNode);
       //p = document.getElementById('blogTitle');
       //p.appendChild(textNode);
 
@@ -61,8 +63,7 @@
       var grid = clickableGrid(3, 3, function (el, row, col, i) {
 
 
-        p = document.getElementById('blogTitle');
-        p.appendChild(textNode);
+     
 
         el.className = 'clicked';
         if (lastClicked) lastClicked.className = '';
@@ -70,7 +71,6 @@
       });
 
       document.body.appendChild(grid);
-
     }
 
 
@@ -83,6 +83,7 @@
         for (var c = 0; c < cols; ++c) {
           var cell = tr.appendChild(document.createElement('td'));
           cell.innerHTML = ++i;
+          cell.src = "/goblindoctors.png";
           cell.addEventListener('click', (function (el, r, c, i) {
             return function () { callback(el, r, c, i); }
           })(cell, r, c, i), false);
