@@ -2,130 +2,14 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body,
-    html {
-      height: 100%;
-      margin: 0;
-      font: 400 15px/1.8 "Lato", sans-serif;
-      color: #777;
-    }
-
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3
-    {
-      position: relative;
-      opacity: 1.0;
-      background-attachment: scroll;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-
-    }
-
-    .bgimg-1 {
-      background-image: url("hermitbg.jpg");
-      min-height: 100%;
-    }
-
-    .bgimg-2 {
-      background-image: url("arrowhoodposter.jpg");
-      min-height: 800px;
-    }
-
-    .bgimg-3 {
-      background-image: url("goblindoctors.png");
-      min-height: 800px;
-    }
-
-
-
-    .caption {
-      position: absolute;
-      left: 0;
-      top: 50%;
-      width: 100%;
-      text-align: center;
-      color: #000;
-    }
-
-    .caption span.border {
-      background-color: #111;
-      color: #fff;
-      padding: 18px;
-      font-size: 25px;
-      letter-spacing: 10px;
-    }
-
-    h3 {
-      letter-spacing: 5px;
-      text-transform: uppercase;
-      font: 20px "Lato", sans-serif;
-      color: #111;
-    }
-
-    /* Turn off parallax scrolling for tablets and phones */
-    @media only screen and (max-device-width: 1024px) {
-
-      .bgimg-1,
-      .bgimg-2,
-      .bgimg-3
-      {
-        background-attachment: scroll;
-      }
-    }
-  </style>
+  <title>HTML Image as link</title>
 </head>
 
 <body>
-
-
-    <div class="caption">
-      <span class="border">Martin Carlsson</span>
-        <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-          <h3 style="text-align:center;"></h3>
-          <p>Hello! My name I Martin and this is my portfolio. I am a game programmer student at Futuregames </p>
-        </div>
-    </div>
-  <div class="bgimg-2">
-  </div>
-
-  <div style="position:relative;">
-      <p>
-        arrowhood arrowhood 
-        arrowhood arrowhoodarrowhood arrowhoodarrowhood arrowhoodarrowhood arrowhoodarrowhood arrowhoodarrowhood arrowhood
-        arrowhood arrowhood
-        arrowhood arrowhood
-        arrowhood arrowhoodarrowhood arrowhoodarrowhood arrowhoodarrowhood arrowhoodarrowhood arrowhoodarrowhood arrowhoodarrowhood arrowhood
-        arrowhood arrowhoodarrowhood arrowhoodarrowhood arrowhoodarrowhood arrowhoodarrowhood arrowhoodarrowhood arrowhoodarrowhood arrowhood
-        arrowhood arrowhoodarrowhood arrowhoodarrowhood arrowhoodarrowhood arrowhoodarrowhood arrowhoodarrowhood arrowhood
-      </p>
-  </div>
-
-  <div class="bgimg-3">
-  </div>
-
-  <div style="position:relative;">
-    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-      <p>The Hermit is a top down hack and slash game where you control some friendly forest minions. The minions help you in combat and are also useful to solve 
-        puzzles in the way of the hermit! My role in this project was to implement the AI for the weasels. The ai technique used was Utility AI coupled with a state machine.
-
-      </p>
-    </div>
-  </div>
-
-  <div class="bgimg-1">
-  </div>
-
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <p>Goblin Doctors is a 2 player coop game where you play as a goblin trying to save goblins.
-    Goblin Doctors is a 2 player coop game where you play as a goblin trying to save goblins.
-
-    </p>
-  </div>
-</div>
+  The following image works as a link:<br>
+  <a href="/goblindoctors.html">
+    <img alt="Qries" src="/goblindoctors.png" width=150" height="70">
+  </a>
 </body>
+
 </html>
