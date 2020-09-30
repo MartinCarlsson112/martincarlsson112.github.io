@@ -2,130 +2,129 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body {
-      background: linear-gradient(#09749738 0%, #ff99cc2c 100%) no-repeat center center fixed;
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font: 400 15px/1.8 "Lato", sans-serif;
+      color: #777;
+    }
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+      position: relative;
+      opacity: 0.65;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
       background-size: cover;
-      font-family: verdana;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      font-size: 14px;
-    }
-    header{
-      font-size: 14px;
-      font-family: verdana;
+
     }
 
-.grid { margin:1em auto; border-collapse:collapse }
+    .bgimg-1 {
+      background-image: url("GoblinDoctors.png");
+      min-height: 100%;
+    }
 
-.grid td {
-    cursor:pointer;
-    width: auto;
-    height: auto;
-    max-width: 20vw;
-    border:1px solid #ccc;
-    text-align:center;
-    font-family:sans-serif; 
-    font-size:13px;
-}
+    .bgimg-2 {
+      background-image: url("arrowhood.png");
+      min-height: 400px;
+    }
 
-.grid td.clicked {
-    background-color:yellow;
-    font-weight:bold; color:red;
-}
+    .bgimg-3 {
+      background-image: url("hermitbg.jpg");
+      min-height: 400px;
+    }
 
+    .caption {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      color: #000;
+    }
+
+    .caption span.border {
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      font-size: 25px;
+      letter-spacing: 10px;
+    }
+
+    h3 {
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      font: 20px "Lato", sans-serif;
+      color: #111;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+
+      .bgimg-1,
+      .bgimg-2,
+      .bgimg-3 {
+        background-attachment: scroll;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <h1>
-    <p id='blogTitle' style="text-align:center"></p>
 
-  <header>
-    <p>My Portfolio</p>
-    <nav>
-      <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="/about">About</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main></main>
-  <footer></footer>
+  <div class="bgimg-1">
+    <div class="caption">
+      <span class="border">SCROLL DOWN</span>
+    </div>
+  </div>
 
+  <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+    <h3 style="text-align:center;">Parallax Demo</h3>
+    <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the
+      foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere
+      mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim.
+      Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam
+      vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales
+      tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam
+      sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit
+      proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
+  </div>
 
+  <div class="bgimg-2">
+    <div class="caption">
+      <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+    </div>
+  </div>
 
-  </h1>
+  <div style="position:relative;">
+    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+      <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+    </div>
+  </div>
 
-  <p id=''></p>
+  <div class="bgimg-3">
+    <div class="caption">
+      <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+    </div>
+  </div>
 
+  <div style="position:relative;">
+    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+      <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+    </div>
+  </div>
 
-  <script language="JavaScript">
-
-    var blogtitle = "Gamedev With Martin";
-    window.onload = function () {
-      var textNode = document.createTextNode(blogtitle);
-      p = document.getElementById('blogTitle');
-      p.appendChild(textNode);
-      //p = document.getElementById('blogTitle');
-      //p.appendChild(textNode);
-
-      var lastClicked;
-
-      var grid = clickableGrid(3, 3, function (el, row, col, i) {
-
-
-     
-
-        el.className = 'clicked';
-        if (lastClicked) lastClicked.className = '';
-        lastClicked = el;
-      });
-
-      document.body.appendChild(grid);
-    }
-
-
-    function clickableGrid(rows, cols, callback) {
-      var i = 0;
-      var grid = document.createElement('table');
-      grid.className = 'grid';
-      for (var r = 0; r < rows; ++r) {
-
-        var tr = grid.appendChild(document.createElement('tr'));
-        for (var c = 0; c < cols; ++c) {
-          var img = new Image();
-          img.src = '/goblindoctors.png';
-          img.style.width = 'auto'
-          img.style.maxWidth = '20vw'
-          img.style.height = 'auto'
-          var cell = tr.appendChild(document.createElement('td'));
-          cell.appendChild(img);
-          //cell.innerHTML = ++i;
-
-          cell.addEventListener('click', (function (el, r, c, i) {
-            return function () { callback(el, r, c, i); }
-          })(cell, r, c, i), false);
-        }
-      }
-      return grid;
-    }
-  </script>
-
-
+  <div class="bgimg-1">
+    <div class="caption">
+      <span class="border">COOL!</span>
+    </div>
+  </div>
 
 </body>
-
 
 </html>
