@@ -6,24 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Portfoliowebsite</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/HoverEffect.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-md bg-dark">
-        <div class="container-fluid"><a class="navbar-brand" href="#">Brand</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse"
-                id="navcol-1">
-                <ul class="nav navbar-nav flex-grow-1 justify-content-between">
-                    <li class="nav-item"><a class="nav-link" href="#">First Item</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Second Item</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Third Item</a></li>
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark" style="text-align: center;background: rgb(0,0,0);">
+        <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav flex-grow-1 justify-content-around mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
                 </ul>
-            </div>
+            </div><a class="navbar-brand" href="#" style="border-radius: 0;background: url(&quot;assets/img/MartinCarlsson.png&quot;) center / cover no-repeat;width: 223px;height: 31px;"></a>
+            <ul class="nav navbar-nav flex-grow-1 justify-content-around">
+                <li class="nav-item"><a class="nav-link" href="#">About me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
         </div>
     </nav>
-    <div class="row">
-        <div class="col"><img class="img-fluid" src="assets/img/Hermiticon.png" width="50%"><img class="img-fluid" src="assets/img/goblinIcon.png" width="50%"><img class="img-fluid" src="assets/img/arrowhoodicon.png" width="50%"></div>
+    <div class="row no-gutters text-center">
+        <div class="col text-center d-md-flex justify-content-md-start align-items-md-start"><div class="hovereffect-customcode">
+    <div class="hovereffect">
+        <img class="img-responsive" src="assets/img/arrowhoodicon.png" alt="">
+            <div class="overlay">
+                <img class="img-hoverlogo" src="assets/img/arrowhoodlogo.png">
+				<p>
+					<a href="#">Read More</a>
+				</p>
+            </div>
+    </div>
+</div><div class="hovereffect-customcode">
+    <div class="hovereffect">
+        <img class="img-responsive" src="assets/img/arrowhoodicon.png" alt="">
+            <div class="overlay">
+                <img class="img-hoverlogo" src="assets/img/arrowhoodlogo.png">
+				<p>
+					<a href="#">Read More</a>
+				</p>
+            </div>
+    </div>
+</div></div>
+    </div>
+    <div class="row no-gutters text-center">
+        <div class="col d-lg-flex justify-content-lg-start"><div class="hovereffect-customcode">
+    <div class="hovereffect">
+        <img class="img-responsive" src="assets/img/arrowhoodicon.png" alt="">
+            <div class="overlay">
+                <img class="img-hoverlogo" src="assets/img/arrowhoodlogo.png">
+				<p>
+					<a href="/Arrowhood">Read More</a>
+				</p>
+            </div>
+    </div>
+</div></div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
