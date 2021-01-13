@@ -88,3 +88,7 @@
   color: #fff;
 }
 
+.dropdown-item:hover {
+  background-color: #000;
+}
+

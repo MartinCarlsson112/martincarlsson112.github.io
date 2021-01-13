@@ -24,7 +24,11 @@
         <div class="container-fluid"><a class="navbar-brand" href="index.html" style="color: rgba(255,255,255,0.9);">martingame.dev</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" style="border-color: rgba(255,255,255,0.5);color: rgb(0,0,0);"><span class="sr-only" style="background: #000000;border-color: rgb(255,255,255);">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="projects.html" style="color: rgb(255,255,255);">projects</a></li>
+                    <li class="nav-item">
+                        <div class="nav-item dropdown" style="padding-top: 8px;"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="color: rgb(255,255,255);font-size: 18;">projects</a>
+                            <div class="dropdown-menu" style="background: rgb(0,0,0);"><a class="dropdown-item" href="index.html#hermit_section" style="color: rgb(255,255,255);">The Hermit</a><a class="dropdown-item" href="index.html#arrowhood_section" style="color: rgb(255,255,255);">Arrowhood</a><a class="dropdown-item" href="index.html#goblin_doctors_section" style="color: rgb(255,255,255);">Goblin Doctors</a><a class="dropdown-item" href="index.html#other_section" style="color: rgb(255,255,255);">Other</a></div>
+                        </div>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="blog.html" style="color: rgb(255,255,255);">blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html" style="color: rgb(255,255,255);">contact</a></li>
                 </ul>
@@ -38,7 +42,7 @@
                 <div class="row">
                     <div class="col" style="margin-top: 10vh;">
                         <h1>Welcome!</h1>
-                        <p>My name is Martin Carlsson! Currently studying game programming at Futuregames, previously graduated from Game Design and Programming at Uppsala University Campus Gotland.&nbsp;<br><br>I am currently hunting for a game programming internship!<br><br>I enjoy working in most areas of game development. That said, gameplay programming is what I have most fun doing! I love working with passionate designers, a big source of my motivation comes from others, I always want to impress!<br><br>Unity guru but recently more comfortable with Unreal Engine. C++ most comfortable language.&nbsp;<br><br>On my free time I enjoy creating game concepts, work on my C++ game engine, music and skate.<br><br>Currently working on:<br>Goblin Doctors.<br>Custom game engine.<br>School work.</p>
+                        <p>My name is Martin Carlsson! Currently studying game programming at Futuregames, previously graduated from Game Design and Programming at Uppsala University Campus Gotland.&nbsp;<br><br>I am currently hunting for a game programming internship!<br><br>I enjoy working in most areas of game development. That said, gameplay programming is what I think is most fun! I am most comfortable working in Unreal Engine with c++, but have a bit of experience in Unity too.<br><br>On my free time I enjoy creating game concepts, music and skating.<br><br>Currently working on:<br>Secret game project.<br>Game engine development.<br>School work.</p>
                     </div>
                     <div class="col d-md-flex justify-content-md-center align-items-md-center"><img src="assets/img/Martin-Carlsson-709x1024.jpg" style="width: 40vw;"></div>
                 </div>
@@ -84,7 +88,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <p>Arrowhood is a 4-play, local split screen FPS game developed in Unreal Engine over 4 weeks at Futuregames. Arrowhood draws inspiration from older, fast paced FPS games like Quake and also has obvious inspiration from Overwatch. The game concept is a combination of Archery and Parkour (think Hanzo, for any Overwatch player). You climb walls, you dash around and try to hit sweet headshots with your amazing bow-shooting skills.<br><br>During this project I worked mainly in c++, implementing Player Movement and the Aim Assist Targeting system.&nbsp;For more detailed information about the project please visit the itch.io page.&nbsp;<br></p>
+                    <p>Arrowhood is a 4-player, local split screen FPS game developed in Unreal Engine over 4 weeks at Futuregames. Arrowhood draws inspiration from older, fast paced FPS games like Quake and also has obvious inspiration from Overwatch. The game concept is a combination of Archery and Parkour (think Hanzo, for any Overwatch player). You climb walls, you dash around and try to hit sweet headshots with your amazing bow-shooting skills.<br><br>During this project I worked mainly in c++, implementing Player Movement and the Aim Assist Targeting system.&nbsp;For more detailed information about the project please visit the itch.io page.&nbsp;<br></p>
                 </div>
             </div>
         </div>
@@ -105,7 +109,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <p>Goblin doctors is a 2 player co-op game. The game was developed over 8 weeks at campus gotland. Created in Unity 5.6.<br><br><br>I worked on goblins, orcs, vehicles, physics.</p>
+                    <p>This two player co-op game was developed over 8 weeks at Campus Gotland in a team of 6. Created in Unity 5.6. <br><br>In Goblin Doctors you play as a goblin, and apparently you're a doctor. Your tasks include; scavenging for scraps, crafting prosthetics, transporting orcs, chopping off orc limbs and attaching prosthetics... hopefully you also get to discharge some orcs.<br><br>During this project I worked on the goblins, orcs and vehicles. This was my first 3D project in Unity and it was a very good learning experience.</p>
                 </div>
             </div>
         </div>
@@ -119,6 +123,7 @@
             </div>
         </div>
     </section>
+    <section id="other_section"></section>
     <div class="team-boxed" style="background: rgb(0,0,0);">
         <div class="container">
             <div class="intro">
@@ -127,9 +132,9 @@
             <div class="row people">
                 <div class="col-md-6 col-lg-4 item">
                     <div class="box" style="background: rgb(0,0,0);"><img class="rounded-circle" src="3.jpg">
-                        <h3 class="name" style="color: rgb(255,255,255);">VEX</h3>
+                        <h3 class="name" style="color: rgb(255,255,255);">ember</h3>
                         <p class="title">3D Game Engine</p>
-                        <p class="description">3D Game engine in c++, opengl 4.5. Windows only.<br>Features:<br>PBR, point and directional lights, Voxels with dual contouring-SDFs, skinned skeleton animations, PhysX integration,&nbsp;</p>
+                        <p class="description">3D Game engine in c++, opengl 4.5. Windows only.<br>Features:<br>PBR, point and directional lights, Voxels with marching cubes / dual contouring, skinned skeletal animation, gpu tesselation, shadow mapping.</p>
                         <div class="social"><a href="#"><i class="fa fa-github"></i></a></div>
                     </div>
                 </div>
@@ -137,15 +142,15 @@
                     <div class="box" style="background: rgb(0,0,0);"><img class="rounded" src="assets/img/skullpatrol.png" style="height: 130px;">
                         <h3 class="name" style="color: rgb(255,255,255);">Skullpatrol</h3>
                         <p class="title">unity 2d platformer</p>
-                        <p class="description">2 week project at Futuregames. Combination of Bobble Bubble and space invaders?<br>Co-op or single player to kill all the skeletons.</p>
+                        <p class="description">2 week project at Futuregames. Bubble Bobble + Space Invaders fusion. Co-op or single player.<br>Cpt Calcium - Shoot the skeletons with your bubble gun. Watch out for falling rocks...<br>Tank - Shoot the bubbled skeletons to destroy their souls.<br>Watch out for the summoner!<br><br>My contributions: Skeleton AI, Summoner AI, vfx.<br><br></p>
                         <div class="social"><a href="https://www.youtube.com/watch?v=59Xo-saWrFs" target="_blank"><i class="fa fa-youtube-play"></i></a></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
                     <div class="box" style="background: rgb(0,0,0);"><img class="rounded" src="assets/img/astroids_small.png" style="height: 130px;">
                         <h3 class="name" style="color: rgb(255,255,255);">Asteroids clone</h3>
-                        <p class="title">android 3d</p>
-                        <p class="description">Asteroids clone for android in Java with GLES3.0. 3D Models, modern opengl, textures, shaders, obj loader.</p>
+                        <p class="title">android</p>
+                        <p class="description">Asteroids clone for android in Java with GLES.&nbsp;<br></p>
                         <div class="social"><a href="#"><i class="fa fa-github"></i></a></div>
                     </div>
                 </div>
