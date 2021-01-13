@@ -35,7 +35,7 @@
             </div>
         </div>
     </nav>
-    <section class="d-flex flex-column justify-content-between" id="hero_section" style="height: 100vh;">
+    <section class="d-flex flex-column justify-content-between" id="hero_section">
         <div id="hero_top"></div>
         <div>
             <div class="container" style="margin-top: 5vh;">
@@ -44,27 +44,27 @@
                         <h1>Welcome!</h1>
                         <p>My name is Martin Carlsson! Currently studying game programming at Futuregames, previously graduated from Game Design and Programming at Uppsala University Campus Gotland.&nbsp;<br><br>I am currently hunting for a game programming internship!<br><br>I enjoy working in most areas of game development. That said, gameplay programming is what I think is most fun! I am most comfortable working in Unreal Engine with c++, but have a bit of experience in Unity too.<br><br>On my free time I enjoy creating game concepts, music and skating.<br></p>
                     </div>
-                    <div class="col justify-content-md-center align-items-md-center" style="margin-top: 10vh;min-height: 0px;max-height: 100vh;"><img src="assets/img/Martin-Carlsson-709x1024.jpg" style="width: auto;padding-top: 60px;max-height: 80vh;"></div>
+                    <div class="col text-truncate justify-content-md-center align-items-md-center" style="margin-top: 10vh;min-height: 0px;max-height: 100vh;"><img src="assets/img/Martin-Carlsson-709x1024.jpg" style="width: 40vw;max-height: auto;max-width: 350px;"></div>
                 </div>
             </div>
         </div>
         <div></div>
         <div id="hero_bottom"></div>
     </section>
-    <section class="text-truncate d-flex flex-column justify-content-between align-items-center align-items-md-center" id="hermit_section" style="background: #01151e;height: 100vh;">
+    <section class="d-flex flex-column justify-content-between align-items-center align-items-md-center" id="hermit_section" style="background: #01151e;height: 100vh;">
         <div id="hero_top-1"></div><img data-aos="fade" data-aos-duration="950" id="hermit_image" src="assets/img/hermit/hermitbg.jpg" style="width: auto;height: 50vh;">
         <div class="container" id="hermit_about">
             <div class="row">
-                <div class="col d-flex d-lg-flex justify-content-md-center justify-content-lg-center align-items-lg-center"><img src="assets/img/hermit/hermit_logo.png"></div>
+                <div class="col d-flex d-lg-flex justify-content-md-center justify-content-lg-center align-items-lg-center"><img class="img-fluid" src="assets/img/hermit/hermit_logo.png" style="width: auto;"></div>
             </div>
             <h1 style="font-family: KARAMEL;">About the Hermit</h1>
             <p>The hermit is a top-down action adventure rpg&nbsp;developed over 8 weeks at Futuregames while working from home.&nbsp;During this project I worked on the AI, player mechanics, combat mechanics, puzzle mechanics and visual effects.<br><br>The player character is the hermit. You join him in his fight against the weasels. The hermit can gain the trust of forest spirits who can aid him in combat and in navigating the forest. The hermit has a 3 attack combo, can pick up forest spirits and fruits, feed fruits to the forest spirits and throw the forest spirits he is holding.<br></p>
         </div>
         <div class="container" id="hermit_gameplay" style="height: auto;width: auto;"><iframe allowfullscreen="" frameborder="0" id="hermit_gameplay_videoplayer" style="width: 80vw;height: 80vh;" height="auto" width="auto"></iframe></div>
-        <div data-aos="fade" data-aos-duration="950" data-aos-offset="50px" id="hero_bottom-1">
-            <div class="row">
+        <div id="hero_bottom-1">
+            <div class="row" style="margin-bottom: 5vh;">
                 <div class="col"><button class="btn btn-light btn-block d-block arrow_button shadow-none" id="hermit_project_button" type="button" style="color: rgb(255,255,255);background: rgba(248,249,250,0);font-size: 27px;border-style: none;font-family: KARAMEL;">about</button></div>
-                <div class="col" style="margin-bottom: 5vh;"><button class="btn btn-light btn-block d-block arrow_button shadow-none" id="hermit_gameplay_button" type="button" style="color: rgb(255,255,255);background: rgba(248,249,250,0);font-size: 27px;border-style: none;font-family: KARAMEL;width: 300px;">gameplay demo</button></div>
+                <div class="col"><button class="btn btn-light btn-block d-block arrow_button shadow-none" id="hermit_gameplay_button" type="button" style="color: rgb(255,255,255);background: rgba(248,249,250,0);font-size: 27px;border-style: none;font-family: KARAMEL;width: 300px;">gameplay demo</button></div>
                 <div class="col"><a class="btn btn-light btn-block d-block arrow_button shadow-none" role="button" style="color: rgb(255,255,255);background: rgba(248,249,250,0);font-size: 27px;border-style: none;font-family: KARAMEL;" href="hermit.html" target="_blank">more</a></div>
             </div>
             <div class="container d-none">
@@ -74,7 +74,7 @@
             </div>
         </div>
     </section>
-    <section class="text-truncate d-flex flex-column justify-content-between align-items-center" id="arrowhood_section" style="width: 100%;height: 100vh;background: #000000;">
+    <section class="d-flex flex-column justify-content-between align-items-center" id="arrowhood_section" style="background: #000000;padding-top: 10vh;margin-top: 5vh;height: 100vh;">
         <div id="hero_top-2"></div>
         <div></div><img data-aos="fade" data-aos-duration="950" id="arrowhood_image" src="assets/img/arrowhoodposter.jpg" style="height: 70vh;">
         <div class="container" id="arrowhood_about">
@@ -94,15 +94,15 @@
         </div>
         <div class="container" id="arrowhood_gameplay" style="width: auto;height: auto;"><iframe allowfullscreen="" frameborder="0" id="arrowhood_gameplay_videoplayer" width="560" height="315" style="width: 80vw;height: 80vh;"></iframe></div>
         <div id="hero_bottom-2">
-            <div class="row" data-aos="fade" data-aos-duration="950" data-aos-offset="100px" style="margin-bottom: 5vh;">
+            <div class="row" style="margin-bottom: 5vh;">
                 <div class="col"><button class="btn btn-light btn-block d-block arrow_button shadow-none" id="arrowhood_project_button" type="button" style="color: rgb(255,255,255);background: rgba(248,249,250,0);font-size: 27px;border-style: none;font-family: Alegreya, serif;">about</button></div>
                 <div class="col"><button class="btn btn-light btn-block d-block arrow_button shadow-none" id="arrowhood_gameplay_button" type="button" style="color: rgb(255,255,255);background: rgba(248,249,250,0);font-size: 27px;border-style: none;width: 230px;font-family: Alegreya, serif;">trailer</button></div>
                 <div class="col"><a class="btn btn-light btn-block d-block arrow_button shadow-none" role="button" style="color: rgb(255,255,255);background: rgba(248,249,250,0);font-size: 27px;border-style: none;width: 200px;font-family: Alegreya, serif;" href="https://fredrikhanses.itch.io/arrowhood" target="_blank">itch.io page</a></div>
             </div>
         </div>
     </section>
-    <section class="text-truncate d-flex flex-column justify-content-between align-items-center" id="goblindoctors_section" style="width: 100%;height: 100vh;background: #011722;">
-        <div id="hero_top-5"></div><img data-aos="fade" data-aos-duration="950" id="goblin_doctors_image" src="assets/img/goblindoctors.png" style="width: 80vw;margin-left: 0;">
+    <section class="d-flex flex-column justify-content-between align-items-center" id="goblindoctors_section" style="background: #011722;">
+        <div id="hero_top-5"></div><img data-aos="fade" data-aos-duration="950" id="goblin_doctors_image" src="assets/img/goblindoctors.png" style="width: auto;margin-left: 0;max-height: 50vh;">
         <div class="container" id="goblin_doctors_about">
             <div class="row">
                 <div class="col d-md-flex justify-content-md-center"><img src="assets/img/Goblin%20Doctors%20Logo.png" style="width: 50vw;min-width: 300px;"></div>
@@ -116,7 +116,7 @@
         <div class="container justify-content-xl-center align-items-xl-center" id="goblin_doctors_gameplay"><iframe allowfullscreen="" frameborder="0" id="goblin_doctors_gameplay_videoplayer" width="560" height="315" style="width: 80vw;height: 80vh;"></iframe></div>
         <div></div>
         <div id="hero_bottom-5" style="margin-bottom: 5vh;">
-            <div class="row" data-aos="fade" data-aos-duration="950" data-aos-offset="100px">
+            <div class="row">
                 <div class="col"><button class="btn btn-light btn-block d-block arrow_button shadow-none" id="goblin_doctors_project_button" type="button" style="color: rgb(255,255,255);background: rgba(248,249,250,0);font-size: 24px;border-style: none;font-family: 'Balsamiq Sans', cursive;">about</button></div>
                 <div class="col" style="width: 230px;"><button class="btn btn-light btn-block d-block arrow_button shadow-none" id="goblin_doctors_gameplay_button" type="button" style="color: rgb(255,255,255);background: rgba(248,249,250,0);font-size: 24px;border-style: none;width: 230px;font-family: 'Balsamiq Sans', cursive;">trailer</button></div>
                 <div class="col"><a class="btn btn-light btn-block d-block arrow_button shadow-none" role="button" style="color: rgb(255,255,255);background: rgba(248,249,250,0);font-size: 24px;border-style: none;width: 200px;font-family: 'Balsamiq Sans', cursive;" href="goblin-doctors.html" target="_blank">project page</a></div>
