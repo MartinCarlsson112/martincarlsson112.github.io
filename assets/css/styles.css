@@ -1,24 +1,79 @@
 body {
-  background-color: #000000;
+  background: rgb(0,0,0);
+  color: rgb(255,255,255);
 }
 
-.img-fluid {
-  padding: 2%;
-}
-
-.row {
+#hero_section {
   width: 100%;
+  height: 100vh;
+  color: #FFFFFF;
 }
 
-.navbar.navbar-dark.navbar-expand-md.bg-dark {
-  background-color: #000!important;
+#hero_bottom {
+  color: white;
 }
 
-.hermit-page body {
+#hermit_section {
   background-color: #01151e;
 }
 
-body {
-  color: #FFF;
+#arrowhood_section {
+  background-color: #070709;
+}
+
+#goblindoctors_section {
+  background-color: #2c271c;
+}
+
+:root {
+  background-color: #000000;
+}
+
+#arrow_hood_body {
+  background-color: #000;
+}
+
+#goblin_doctors_body {
+  background-color: #001928;
+}
+
+#hermit_page_body {
+  background-color: #01151e;
+}
+
+#scroll-disable {
+  overflow: auto;
+}
+
+#preview {
+  position: static;
+}
+
+#hermit_image2 {
+  display: none;
+}
+
+#hermit_about {
+  display: none;
+}
+
+#hermit_gameplay {
+  display: none;
+}
+
+#arrowhood_about {
+  display: none;
+}
+
+#goblin_doctors_gameplay {
+  display: none;
+}
+
+#goblin_doctors_about {
+  display: none;
+}
+
+#arrowhood_gameplay {
+  display: none;
 }
 

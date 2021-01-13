@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'KARAMEL';
+	src: url(../../assets/fonts/KARAMELRegular.woff2) format('woff2'),
+	url(../../assets/fonts/KARAMELRegular.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
